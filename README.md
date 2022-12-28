@@ -13,4 +13,4 @@ folder1_file1.csv
 folder1_file2.csv
 folder2_file3.csv
 folder2_file4.csv
-Just be careful to consider this issue that in the sheets most of the times you can not save more than 31 character, you if you got this massage: Excel worksheet name 'something_in_your_path_names.csv' must be <= 31 chars, so you should correct the folders name into smaller names. Good luck
+Just be careful to consider this issue that in the sheets most of the times you can not save more than 31 characters, you if you got this massage: Excel worksheet name 'something_in_your_path_names.csv' must be <= 31 chars, so you should correct the folders name into smaller names. Good luck
