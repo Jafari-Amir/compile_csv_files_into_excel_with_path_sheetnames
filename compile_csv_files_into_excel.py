@@ -1,18 +1,15 @@
 import glob
 import pandas as pd
 import re
-
 # Get a list of all CSV files in the directory and its subdirectories.
 csv_files = glob.glob('/Users/your files address, following asterisk "*" should be include, don`t remove it /**/**/*.csv', recursive=True)
-
 # Create an ExcelWriter
 excel_writer = pd.ExcelWriter('/Users/your destination for save single file/output.xlsx', engine='xlsxwriter')
-
 # Looping CSV files
+
 for csv_file in csv_files:
   # Read the CSV file into a DataFrame
   df = pd.read_csv(csv_file)
-
   # Split the file path into its individual components
   path_components = csv_file.split('/')
 
