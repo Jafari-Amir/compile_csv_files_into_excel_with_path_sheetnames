@@ -17,7 +17,7 @@ for csv_file in csv_files:
   file_name = path_components[-1]
   file_name = re.sub(r'[\[\]:*?/\\\']', '_', file_name)
 
-  #the name of the folder containing the file, underscore have the previously described function.
+  #the name of the folder containing the file, underscore have the previously described function. csv also has been removed for more space (characters) in sheet names.
   folder_name = path_components[-2]
   folder_name = re.sub(r'[\[\]:*?/\\\']|\.csv', '_', folder_name)
 
