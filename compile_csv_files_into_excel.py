@@ -19,7 +19,7 @@ for csv_file in csv_files:
 
   #the name of the folder containing the file, underscore have the previously described function.
   folder_name = path_components[-2]
-  folder_name = re.sub(r'[\[\]:*?/\\\']', '_', folder_name)
+  folder_name = re.sub(r'[\[\]:*?/\\\']|\.csv', '_', folder_name)
 
   #sheet name by combining the folder name and file name which follows asterstisk rule
   sheet_name = f"{folder_name}_{file_name}"
